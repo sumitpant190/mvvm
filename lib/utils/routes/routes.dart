@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:mvvm/utils/routes/routes_name.dart';
+import 'package:mvvm/view/signup_view.dart';
 import '../../view/home_screen.dart';
 import '../../view/login_view.dart';
 
@@ -13,6 +14,9 @@ class Routes {
       case RoutesName.login:
         return MaterialPageRoute(
             builder: (BuildContext context) => LoginView());
+      case RoutesName.signup:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => SignUpView());
       default:
         return MaterialPageRoute(builder: (_) {
           return Scaffold(
