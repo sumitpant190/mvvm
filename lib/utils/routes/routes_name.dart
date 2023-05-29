@@ -1,4 +1,6 @@
 class RoutesName {
+  static const String spalsh = 'splash_screen';
+
   //acccount route name
   static const String login = 'login_screen';
 
