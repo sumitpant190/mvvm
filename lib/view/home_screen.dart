@@ -16,7 +16,18 @@ class _HomeScreenState extends State<HomeScreen> {
     final userPreferences = Provider.of<UserViewModel>(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text('home')),
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 15.0),
+            child: InkWell(
+              onTap: () {},
+              child: Center(child: Text('Log Out')),
+            ),
+          ),
+        ],
+      ),
       body: Column(children: [
         Center(
             child: InkWell(

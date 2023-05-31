@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => UserViewModel()),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         initialRoute: RoutesName.spalsh,
         onGenerateRoute: Routes.generateRoute,
       ),
